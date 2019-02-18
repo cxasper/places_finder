@@ -4,7 +4,7 @@ django-cors-headers
 django-crispy-forms
 django-filter
 django-model-utils
-django-rest-auth
+djangorestframework-jwt
 djangorestframework
 markdown
 pip-tools

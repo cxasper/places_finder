@@ -18,6 +18,7 @@ from django.urls import include, path
 from django.contrib import admin
 
 from rest_framework.documentation import include_docs_urls
+from rest_framework_jwt.views import obtain_jwt_token, verify_jwt_token
 
 from apps.core.routers import router
 
@@ -33,5 +34,6 @@ urlpatterns = [
         r'docs/',
         include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
     path(r'api/v1/', include((router.urls, 'api_v1'), namespace='api_v1')),
-    path(r'api/v1/rest-auth/', include('rest_auth.urls'))
+    path(r'api/v1/login/', obtain_jwt_token),
+    path(r'api/v1/token-verify/', verify_jwt_token),
 ]
