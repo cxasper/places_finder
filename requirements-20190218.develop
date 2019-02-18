@@ -19,8 +19,8 @@ django-crispy-forms==1.7.2
 django-extensions==2.1.5
 django-filter==2.1.0
 django-model-utils==3.1.2
-django-rest-auth==0.9.3
 django==2.1.7
+djangorestframework-jwt==1.11.0
 djangorestframework==3.9.1
 entrypoints==0.3          # via flake8
 flake8==3.7.5
@@ -48,11 +48,12 @@ pydotplus==2.0.2
 pyflakes==2.1.0           # via flake8
 pygments==2.3.1
 pygraphviz==1.5
+pyjwt==1.7.1              # via djangorestframework-jwt
 pyparsing==2.3.1          # via pydotplus
 python-dotenv==0.10.1
 pytz==2018.9              # via django
 requests==2.21.0          # via coreapi
-six==1.12.0               # via django-extensions, django-rest-auth, model-mommy, pip-tools, prompt-toolkit, traitlets
+six==1.12.0               # via django-extensions, model-mommy, pip-tools, prompt-toolkit, traitlets
 traitlets==4.3.2          # via ipython
 unipath==1.1
 uritemplate==3.0.0        # via coreapi
